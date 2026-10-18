@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta name="description" content="A local-first guide to the islands, culture, and community experiences of Marinduque, Philippines.">
+  <title>Marinduque, Slowly | A Local Island Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Marinduque, Slowly home"><span class="brand-mark" aria-hidden="true">M</span><span>Marinduque, Slowly</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links"><span class="menu-icon" aria-hidden="true"><i></i></span>Menu</button>
+      <div class="nav-links" id="primary-links">
+        <a href="#explore">Places</a>
+        <a href="#guides">Travel guides</a>
+        <a href="#community">Activity updates</a>
+        <a class="nav-cta" href="#guides">Plan a route</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Mimaropa · Philippines</p>
+        <h1 id="hero-title">An island<br>with <em>a soul.</em></h1>
+        <p>Find quiet coves, living traditions, and the people who make Marinduque feel like nowhere else.</p>
+        <a class="hero-link" href="#explore">Start exploring <span aria-hidden="true">↘</span></a>
+      </div>
+      <span class="hero-note">Marinduque Island · Philippines</span>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Take the long way.<br><span>Meet the real island.</span></h2>
+      <div class="intro-copy">
+        <p>Between mountain trails and the sea, Marinduque moves to its own rhythm. This little guide brings together memorable places and ways to experience local life, with room to wander at your own pace.</p>
+        <p class="local-note">A good visit starts with a hello. Ask local hosts about access, boat schedules, and what is happening today.</p>
+      </div>
+    </section>
+
+    <section class="explore" id="explore" aria-labelledby="explore-title">
+      <div class="explore-head">
+        <div><p class="section-kicker">A few good places to begin</p><h2 id="explore-title">Find your kind of day</h2></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search places or towns" aria-label="Search places or towns"></label>
+      </div>
+      <div class="filters" role="group" aria-label="Filter places">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">Everything</button>
+        <button class="filter" type="button" data-filter="nature" aria-pressed="false">Nature &amp; beaches</button>
+        <button class="filter" type="button" data-filter="culture" aria-pressed="false">Culture &amp; heritage</button>
+        <button class="filter" type="button" data-filter="community" aria-pressed="false">Community experiences</button>
+      </div>
+      <div class="results-line"><span id="results-count" aria-live="polite">6 places and experiences</span><span>Across Marinduque</span></div>
+      <div class="places" id="places-list">
+        <article class="place" data-category="nature" data-search="poctoy white beach torrijos sand swimming coast">
+          <div class="place-image"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Turquoise water rolling onto a sandy beach" loading="lazy"><span class="place-type">Beach day</span></div>
+          <div class="place-body"><p class="place-location">Torrijos · South coast</p><h3>Poctoy White Beach</h3><p>A favorite stretch of pale sand and clear water, with Mt. Malindig rising in the distance.</p><div class="place-bottom"><span class="place-tag">Sea · Sunset</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Poctoy+White+Beach+Torrijos+Marinduque" target="_blank" rel="noreferrer">Open map ↗</a></div></div>
+        </article>
+        <article class="place" data-category="nature" data-search="tres reyes islands gasan island hopping beach boat">
+          <div class="place-image"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Small tropical island surrounded by calm blue sea" loading="lazy"><span class="place-type">Island escape</span></div>
+          <div class="place-body"><p class="place-location">Gasan · Offshore</p><h3>Tres Reyes Islands</h3><p>Three small islands off the coast. Ask Gasan boat operators about sea conditions and day trips.</p><div class="place-bottom"><span class="place-tag">Boats · Snorkeling</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tres+Reyes+Islands+Gasan+Marinduque" target="_blank" rel="noreferrer">Open map ↗</a></div></div>
+        </article>
+        <article class="place" data-category="nature" data-search="maniwaya island santa cruz beach sandbar nature">
+          <div class="place-image"><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Island shoreline with palms beside bright blue water" loading="lazy"><span class="place-type">Island escape</span></div>
+          <div class="place-body"><p class="place-location">Santa Cruz · Northeast</p><h3>Maniwaya Island</h3><p>Beach time, island views, and nearby sandbars make this a lovely change of pace from the mainland.</p><div class="place-bottom"><span class="place-tag">Sea · Sandbar</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Maniwaya+Island+Santa+Cruz+Marinduque" target="_blank" rel="noreferrer">Open map ↗</a></div></div>
+        </article>
+        <article class="place" data-category="culture" data-search="boac cathedral immaculada concepcion heritage church history boac">
+          <div class="place-image"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Historic stone church with a detailed facade" loading="lazy"><span class="place-type">Heritage</span></div>
+          <div class="place-body"><p class="place-location">Boac · Town center</p><h3>Boac Cathedral</h3><p>Visit the Immaculada Concepcion Cathedral and wander the streets of Marinduque's provincial capital.</p><div class="place-bottom"><span class="place-tag">Architecture · History</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Boac+Cathedral+Marinduque" target="_blank" rel="noreferrer">Open map ↗</a></div></div>
+        </article>
+        <article class="place" data-category="culture" data-search="moriones festival morion masks holy week boac mogpog culture">
+          <div class="place-image"><img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Colorful hand-painted festival mask" loading="lazy"><span class="place-type">Living tradition</span></div>
+          <div class="place-body"><p class="place-location">Across the island · Holy Week</p><h3>Moriones Festival</h3><p>See the island's striking Morion masks and processions. Dates and activities follow the Holy Week calendar.</p><div class="place-bottom"><span class="place-tag">Festival · Craft</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Moriones+Festival+Marinduque" target="_blank" rel="noreferrer">Open map ↗</a></div></div>
+        </article>
+        <article class="place" data-category="community" data-search="putong ceremony welcome song local community music hospitality">
+          <div class="place-image"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Community gathering and live music" loading="lazy"><span class="place-type">Meet the community</span></div>
+          <div class="place-body"><p class="place-location">By local invitation</p><h3>Experience a Putong</h3><p>Learn about Marinduque's traditional welcome song and ceremony by joining through a local host.</p><div class="place-bottom"><span class="place-tag">Music · Welcome</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Marinduque+cultural+experiences" target="_blank" rel="noreferrer">Find local hosts ↗</a></div></div>
+        </article>
+        <div class="empty-state" id="empty-state" hidden><strong>No places found just yet.</strong>Try another search or choose a different filter.</div>
+      </div>
+    </section>
+
+    <section class="guides" id="guides" aria-labelledby="guides-title">
+      <div class="guides-head">
+        <div><p class="section-kicker">Simple routes, local pace</p><h2 id="guides-title">A little help getting there</h2></div>
+        <p class="guides-intro">Use these starting points to plan your day. Map links cover road or town directions; island boat legs need to be arranged with local operators.</p>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card"><p class="guide-number">01 · HERITAGE WALK</p><h3>A morning in Boac</h3><p class="guide-summary">A relaxed introduction to the capital's historic center.</p><p class="guide-route"><span>Start</span> Boac Cathedral<br><span>Then</span> Walk the town center and visit the public market</p><p class="guide-note">The cathedral is in central Boac. Check local opening hours and be respectful during services.</p><a class="guide-map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Boac+Cathedral,+Marinduque&amp;destination=Boac+Public+Market,+Marinduque&amp;travelmode=walking" target="_blank" rel="noreferrer">Walking directions ↗</a></article>
+        <article class="guide-card"><p class="guide-number">02 · SEA DAY</p><h3>Gasan to Tres Reyes</h3><p class="guide-summary">Set off from Gasan for an island visit when sea conditions allow.</p><p class="guide-route"><span>Road</span> Boac town to Gasan Port<br><span>By boat</span> Ask a local operator about island trips</p><p class="guide-note">The map shows the road leg only. Confirm boat schedules, fees, weather, and return timing in Gasan.</p><a class="guide-map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Boac,+Marinduque&amp;destination=Gasan+Port,+Marinduque&amp;travelmode=driving" target="_blank" rel="noreferrer">Directions to Gasan ↗</a></article>
+        <article class="guide-card"><p class="guide-number">03 · BEACH DAY</p><h3>Santa Cruz to Maniwaya</h3><p class="guide-summary">Pair a mainland transfer with a beach day on Maniwaya Island.</p><p class="guide-route"><span>Road</span> Santa Cruz town to Buyabod Port<br><span>By boat</span> Coordinate your crossing locally</p><p class="guide-note">Boat crossings are weather-dependent. Ask about departures and return trips before leaving the mainland.</p><a class="guide-map" href="https://www.google.com/maps/dir/?api=1&amp;origin=Santa+Cruz,+Marinduque&amp;destination=Buyabod+Port,+Marinduque&amp;travelmode=driving" target="_blank" rel="noreferrer">Directions to Buyabod ↗</a></article>
+      </div>
+    </section>
+
+    <section class="community" id="community" aria-labelledby="community-title">
+      <div><p class="section-kicker">Community board · Planning notes</p><h2 id="community-title">The best stories happen together.</h2><p class="community-copy">Make space for the people, not just the postcard. These evergreen notes point you toward local experiences; ask your host or local tourism office what is actually happening during your visit.</p></div>
+      <div class="community-list">
+        <article class="community-item"><div><h3>Moriones season</h3><p>Look for Holy Week processions and Morion traditions across the island; confirm town schedules before traveling.</p></div><span>SEASONAL</span></article>
+        <article class="community-item"><div><h3>Island boat trips</h3><p>Ask Gasan or Buyabod operators about departures, sea conditions, group size, and return arrangements.</p></div><span>CHECK LOCALLY</span></article>
+        <article class="community-item"><div><h3>Putong welcomes</h3><p>This traditional welcome is best experienced by invitation. Ask a local host about respectful ways to participate.</p></div><span>BY ARRANGEMENT</span></article>
+        <p class="updates-note">Planning information only · This is not a live event calendar. Dates, availability, and schedules can change; verify locally before setting out.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Marinduque, Slowly · A small guide to a special island.</span><a href="#top">Back to top ↑</a><span>Check local conditions and opening details before you go.</span></footer>
+</body>
+</html>
